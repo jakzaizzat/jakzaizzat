@@ -1,0 +1,9 @@
+<section class="list">
+    <div class="container hero-body">
+            {{ range .Data.Pages }}
+            <li>
+                <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | <span>{{.Title}}</span></a>
+            </li>
+            {{ end }}
+    </div>
+</section>

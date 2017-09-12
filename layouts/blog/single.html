@@ -1,0 +1,48 @@
+
+{{ partial "header.html" . }}
+
+
+<header class="single-blog-title">
+  <h1>
+    <span>{{ .Title }}</span>
+  </h1>
+  <h5>
+    <span>A short tip on how to sort your tags in your Jekyll blog</span>
+  </h5>
+  <hr>
+  <span class="date">{{ .Date.Format "Mon Jan 2, 2006" }}</span>
+</header>
+
+
+<article class="single-blog-content">
+  {{ .Content }}
+</article>
+
+
+  <aside id="meta">
+      <div>
+      {{ with .Params.topics }}
+      <ul id="topics">
+        {{ range . }}
+          <li><a href="{{ "topics" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+      {{ with .Params.tags }}
+      <ul id="tags">
+        {{ range . }}
+          <li> <a href="{{ "tags" | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+      </div>
+      <div>
+          {{ with .PrevInSection }}
+            <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+          {{ end }}
+          {{ with .NextInSection }}
+            <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+          {{ end }}
+      </div>
+  </aside>
+{{ partial "footer.html" . }}

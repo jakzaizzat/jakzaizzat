@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Rubik:400,600");
+/* http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+bash+ruby+git+http+json+less+markdown+nginx+php+powershell+sass+scss+sql+yaml */
+/**
+ * okaidia theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ * @author ocodia
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #f8f8f2;
+  background: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none; }
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: 0.3em; }
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #272822; }
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal; }
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray; }
+
+.token.punctuation {
+  color: #f8f8f2; }
+
+.namespace {
+  opacity: .7; }
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #f92672; }
+
+.token.boolean,
+.token.number {
+  color: #ae81ff; }
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #a6e22e; }
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: #f8f8f2; }
+
+.token.atrule,
+.token.attr-value,
+.token.function {
+  color: #e6db74; }
+
+.token.keyword {
+  color: #66d9ef; }
+
+.token.regex,
+.token.important {
+  color: #fd971f; }
+
+.token.important,
+.token.bold {
+  font-weight: bold; }
+
+.token.italic {
+  font-style: italic; }
+
+.token.entity {
+  cursor: help; }
+
+body {
+  font-family: "Roboto Mono", monospace !important; }
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 600px !important; } }
+.navbar-header {
+  padding: 30px 0; }
+  .navbar-header a {
+    color: #533b9a;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase; }
+
+.article {
+  color: #2e3234;
+  margin-bottom: 20px; }
+  .article h1 {
+    font-size: 1rem; }
+  .article a.article-title {
+    font-size: 1rem;
+    color: #2e3234;
+    font-weight: 600;
+    border-bottom: 3px solid #533b9a; }
+  .article a:hover {
+    text-decoration: none; }
+  .article .article-date {
+    display: block;
+    color: rgba(46, 50, 52, 0.8); }
+
+.single-blog-title h1 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600; }
+.single-blog-title h5 {
+  color: rgba(46, 50, 52, 0.8); }
+
+.single-blog-content {
+  margin: 50px 0 0; }
+  .single-blog-content h1, .single-blog-content h2, .single-blog-content h3, .single-blog-content h4, .single-blog-content h5, .single-blog-content h6 {
+    border-bottom: 5px solid rgba(83, 59, 154, 0.8);
+    padding: 5px 0; }
+  .single-blog-content h1, .single-blog-content h2, .single-blog-content h3 {
+    font-family: "Rubik", sans-serif;
+    margin: 3rem 0 1.5rem;
+    font-weight: 600; }
+  .single-blog-content p {
+    margin: 1rem 0; }
+  .single-blog-content h1 {
+    font-size: 2rem; }
+  .single-blog-content h2 {
+    font-size: 1.5rem; }
+
+footer {
+  background: #2b303e;
+  padding: 50px 0;
+  margin-top: 100px; }
+  footer .navbar-header a {
+    color: #fff;
+    display: block;
+    text-align: center; }
+  footer .footer-text {
+    color: #fff;
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
