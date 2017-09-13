@@ -22,15 +22,16 @@ body {
 // Homepage Article
 
 .article{ color: $black; margin-bottom: 20px;
-  h1{ font-size: 1rem;}
   a.article-title{
-    font-size: 1rem;
+    font-size: 2rem;
     color: $black;
     font-weight: 600;
     border-bottom: 3px solid $purple;
   }
   a:hover{
     text-decoration: none;
+    background: $purple;
+    color: $white;
   }
   .article-date{
     display: block;
@@ -42,7 +43,9 @@ body {
 
 .single-blog-title{
   h1{ font-family: $secondary-font; font-weight: 600;}
-  h5{ color: rgba($black,.8);}
+  h5{ color: rgba($black,.8);
+
+  }
 }
 
 .single-blog-content{ margin: 50px 0 0;
@@ -54,6 +57,8 @@ body {
   h1{ font-size: 2rem;}
   h2{ font-size: 1.5rem;}
 }
+
+.single-blog-link{ margin: 50px 0; }
 
 
 // Footer

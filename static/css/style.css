@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Rubik:400,600");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,600|Quattrocento+Sans:400,700");
 body {
-  font-family: "Roboto Mono", monospace !important; }
+  font-family: "Quattrocento Sans", monospace !important; }
 
 @media (min-width: 992px) {
   .container {
@@ -12,7 +12,7 @@ body {
   padding: 30px 0; }
   .navbar-header a {
     color: #533b9a;
-    font-family: "Roboto Mono", monospace;
+    font-family: "Quattrocento Sans", monospace;
     font-weight: 600;
     font-size: 2rem;
     text-transform: uppercase; }
@@ -20,21 +20,21 @@ body {
 .article {
   color: #2e3234;
   margin-bottom: 20px; }
-  .article h1 {
-    font-size: 1rem; }
   .article a.article-title {
-    font-size: 1rem;
+    font-size: 2rem;
     color: #2e3234;
     font-weight: 600;
     border-bottom: 3px solid #533b9a; }
   .article a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    background: #533b9a;
+    color: #fff; }
   .article .article-date {
     display: block;
     color: rgba(46, 50, 52, 0.8); }
 
 .single-blog-title h1 {
-  font-family: "Rubik", sans-serif;
+  font-family: "Crimson Text", sans-serif;
   font-weight: 600; }
 .single-blog-title h5 {
   color: rgba(46, 50, 52, 0.8); }
@@ -45,7 +45,7 @@ body {
     border-bottom: 5px solid rgba(83, 59, 154, 0.8);
     padding: 5px 0; }
   .single-blog-content h1, .single-blog-content h2, .single-blog-content h3 {
-    font-family: "Rubik", sans-serif;
+    font-family: "Crimson Text", sans-serif;
     margin: 3rem 0 1.5rem;
     font-weight: 600; }
   .single-blog-content p {
@@ -54,6 +54,9 @@ body {
     font-size: 2rem; }
   .single-blog-content h2 {
     font-size: 1.5rem; }
+
+.single-blog-link {
+  margin: 50px 0; }
 
 footer {
   background: #2b303e;
