@@ -1,5 +1,4 @@
 @import 'variable';
-@import 'prim';
 body {
   font-family: $primary-font !important;
 }
@@ -8,6 +7,12 @@ body {
   .container{
     max-width: 600px !important;
   }
+}
+
+// Navbar
+
+.navbar {
+  margin-bottom: 50px;
 }
 
 .navbar-header{padding: 30px 0;
@@ -60,5 +65,6 @@ footer{ background: $black-2; padding: 50px 0; margin-top: 100px;
   .footer-text{
     color: $white;
     text-align: center;
+    a{ font-weight: 600;}
   }
 }
