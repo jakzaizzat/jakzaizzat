@@ -38,6 +38,8 @@ body {
   font-weight: 600; }
 .single-blog-title h5 {
   color: rgba(46, 50, 52, 0.8); }
+.single-blog-title span.date {
+  color: rgba(46, 50, 52, 0.8); }
 
 .single-blog-content {
   margin: 50px 0 0; }
@@ -54,6 +56,11 @@ body {
     font-size: 2rem; }
   .single-blog-content h2 {
     font-size: 1.5rem; }
+  .single-blog-content img {
+    display: block;
+    margin: 30px auto;
+    max-width: 100%;
+    border: 1px solid rgba(46, 50, 52, 0.4); }
 
 .single-blog-link {
   margin: 50px 0; }

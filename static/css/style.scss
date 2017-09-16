@@ -43,9 +43,8 @@ body {
 
 .single-blog-title{
   h1{ font-family: $secondary-font; font-weight: 600;}
-  h5{ color: rgba($black,.8);
-
-  }
+  h5{ color: rgba($black,.8); }
+  span.date { color: rgba($black,.8); }
 }
 
 .single-blog-content{ margin: 50px 0 0;
@@ -53,9 +52,9 @@ body {
   h1,h2,h3,h4,h5,h6{ border-bottom: 5px solid rgba($purple,.8); padding: 5px 0;}
   h1,h2,h3{ font-family: $secondary-font; margin: 3rem 0 1.5rem; font-weight: 600;}
   p{ margin: 1rem 0;}
-
   h1{ font-size: 2rem;}
   h2{ font-size: 1.5rem;}
+  img { display: block; margin: 30px auto; max-width: 100%; border: 1px solid rgba($black,.4);  }
 }
 
 .single-blog-link{ margin: 50px 0; }
