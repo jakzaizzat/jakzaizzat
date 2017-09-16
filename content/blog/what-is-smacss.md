@@ -23,12 +23,16 @@ It has 5 categories
 * State
   * Expand module
   * E.g : .btn-primary , .btn-info, . btn-danger
+* Theme ( Optional )
+
+
   ```css
   .card {}; /* Module */
   .is-card-hover{}; /* State hover */
   .is-card-expanded{}; /* State on expand */
   ```
-* Theme ( Optional )
+  example of state
+  
 
 
 ## Naming Convention
@@ -48,7 +52,7 @@ Group in their own module
 
 Use Sass Preprocessor
 
-```scss
+```css
 
 @import 'base';
 @import 'utilities';
@@ -61,7 +65,7 @@ Use Sass Preprocessor
 
 Use nesting with drawback
 
-```scss
+```css
 
 .card {
 

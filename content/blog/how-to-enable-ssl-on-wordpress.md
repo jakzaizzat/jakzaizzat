@@ -15,7 +15,7 @@ First of all, login to the **WordPress** dashboard and go to the **Settings  &#x
 ![WordPress URL](/image/20170809/wordpress url.png)
 
 Open the **.htaccess** file and add the code below. The **.htaccess** file can’t be found in WordPress, you may find it through hosting either using Cpanel, Filezilla or terminal.
-```
+```bash
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
@@ -25,7 +25,7 @@ RewriteRule ^(.*)$ https://www.yoursite.com/$1 [R,L]
 
 If you’re using **Nginx** server, please add this code below. Replace yoursite.com with your URL
 
-```
+```bash
 server {
 listen 80;
 server_name yoursite.com www.yoursite.com;
