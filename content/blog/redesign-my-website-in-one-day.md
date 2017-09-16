@@ -57,7 +57,7 @@ By the way, Netify gives a free SSL by Letsencrypt, and it’s easy setup. After
 ![New Epal Valley Page Speed Result](/image/20170813/ev_new.png)
 
 
-After several tests on the different website to measure website speed is around 2 - 4 seconds. It was a tremendous performance. It’s a static website no wonder it’s so fast.
+After several tests on the different website to measure website speed is around 2 - 4 seconds. It was a tremendous performance. It’s a static website no wonder it’s so fast.  Take a look at my website [Epalvalley](https://www.epalvalley.com).
 
 
 ## My future plans
