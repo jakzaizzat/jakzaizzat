@@ -6,18 +6,204 @@ body {
 
 @media(min-width: 992px){
   .container{
-    max-width: 600px !important;
+    max-width: 900px !important;
   }
+}
+
+// Components
+.btn{
+  background: #5F80E1;
+  border-radius: 3px;
+  color: $white;
+  text-transform: uppercase;
+  font-size: .6rem;
+  font-family: $primary-font;
+  font-weight: 700;
+  padding: .5rem 1.5rem;
+  &:hover{
+    color: #5F80E1;
+    background:$white;
+  }
+}
+
+.subheading{
+font-family: $secondary-font;
+font-weight: 700;
+font-size: 1rem;
+color: #7B7A7A;
+margin: 0 0 2rem 0;
+}
+
+section{
+  padding: 3rem 0;
 }
 
 // Navbar
 
 .navbar {
   margin-bottom: 50px;
+border: 1px solid rgba(151,151,151,0.46);
 }
 
-.navbar-header{padding: 30px 0;
-    a { color: $purple; font-family: $primary-font; font-weight: 600; font-size: 2rem; text-transform: uppercase;}
+.navbar-header{
+    a { color: $blue; font-family: $primary-font; font-weight: 900; font-size: 1.3rem; text-transform: uppercase; letter-spacing: 1.11px;}
+    /* JAKZ AIZZAT: */
+}
+
+// Homepage
+
+.hero {
+    font-family: $secondary-font;
+  img{
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+  }
+  h1,h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+color: #201E1C;
+line-height: 24px;
+  }
+  p{
+font-size: .7rem;
+color: #424140;
+letter-spacing: 1px;
+margin: 1.4rem 0;
+  }
+  .hero-content{
+    padding: 0 0 0 3rem;
+    @media(max-width: 770px){
+      padding: 3rem 0 0 0;
+    }
+  }
+}
+
+// Work
+#works{
+  .single-work{
+// background: #D8D8D8;
+position: relative;
+box-shadow: 0 2px 6px 0 rgba(0,0,0,0.17);
+border-radius: 5px;
+text-align: center;
+height: 150px;
+margin: 2rem 0;
+background-size: cover;
+display: flex;
+align-items: center;
+justify-content: center;
+  p{ display: none; color: $white;}
+  &:hover{
+    transform: translateY(-2px);
+    p { display: block;}
+  }
+}
+
+}
+
+.work-jetpack{
+  background-image: url('../image/work/jetpack.jpg');
+}
+.work-accorp{
+  background-image: url('../image/work/accorp.jpg');
+}
+.work-tsheurope{
+  background-image: url('../image/work/tsheurope.jpg');
+}
+.work-ohana{
+  background-image: url('../image/work/ohana.jpg');
+}
+.work-epalvalley{
+  background-image: url('../image/work/epalvalley.png');
+}
+.work-archinext{
+  background-image: url('../image/work/archinext.png');
+}
+.work-pizzaro{
+  background-image: url('../image/work/pizzaro.png');
+}
+
+#testimonial{
+  .single-testimonial{
+    background: #CB6B93;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    border-radius: 5px;
+    padding: 25px 10px;
+    .testimonial-user{
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      background: $white;
+      display: block;
+      margin: 0 0 0 auto;
+      @media(max-width: 576px){
+        margin: 0 auto;
+      }
+    }
+    .testimonial-content{
+      font-size: 1rem;
+      color: $white;
+      line-height: 1;
+      margin: 20px 0;
+      @media(max-width: 576px){
+        text-align: center;
+      }
+      p{
+        margin: 0 0 5px 0;
+        font-weight: 700;
+      }
+      span{
+        font-size: .9rem;
+      }
+    }
+  }
+}
+
+#brand{
+  img{
+    max-height: 50px;
+    width: auto;
+    background-size: cover;
+  }
+}
+
+#cta{
+  margin: 2rem 0;
+  .cta-content{
+    padding: 25px 30px;
+    background: $white;
+    box-shadow: 0 15px 35px 0 rgba(0,0,0,0.10);
+    border-radius: 5px;
+    h3{ 
+      font-size: 1rem;/* Have a project in mi: */
+      font-family: $primary-font;
+      font-weight: 700;
+      color: #424140;
+    }
+    p{
+      /* Would love to discus: */
+      font-family: $primary-font;
+font-size: .8rem;
+color: #424140;
+    }
+  }
+}
+
+#cta{
+  .cta-profile{
+    img{
+      max-width: 100px;
+      height: auto;
+      margin: 0 10px 0 auto;
+      display: block;
+    }
+  }
+  .cta-detail{
+    svg{
+      margin-right: 10px;
+    }
+  }
 }
 
 // Homepage Article

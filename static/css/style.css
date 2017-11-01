@@ -4,7 +4,7 @@
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/
  * @author ocodia
  */
-@import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,600|Quattrocento+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,600|Quattrocento+Sans:400,700,900");
 code[class*="language-"],
 pre[class*="language-"] {
   color: #f8f8f2;
@@ -160,18 +160,166 @@ body {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 600px !important; } }
+    max-width: 900px !important; } }
+.btn {
+  background: #5F80E1;
+  border-radius: 3px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: .6rem;
+  font-family: "Quattrocento Sans", monospace;
+  font-weight: 700;
+  padding: .5rem 1.5rem; }
+  .btn:hover {
+    color: #5F80E1;
+    background: #fff; }
+
+.subheading {
+  font-family: "Crimson Text", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #7B7A7A;
+  margin: 0 0 2rem 0; }
+
+section {
+  padding: 3rem 0; }
+
 .navbar {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  border: 1px solid rgba(151, 151, 151, 0.46); }
 
 .navbar-header {
-  padding: 30px 0; }
+  /* JAKZ AIZZAT: */ }
   .navbar-header a {
-    color: #533b9a;
+    color: #5F80E1;
     font-family: "Quattrocento Sans", monospace;
+    font-weight: 900;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1.11px; }
+
+.hero {
+  font-family: "Crimson Text", sans-serif; }
+  .hero img {
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto; }
+  .hero h1, .hero h2 {
+    font-size: 1.3rem;
     font-weight: 600;
-    font-size: 2rem;
-    text-transform: uppercase; }
+    color: #201E1C;
+    line-height: 24px; }
+  .hero p {
+    font-size: .7rem;
+    color: #424140;
+    letter-spacing: 1px;
+    margin: 1.4rem 0; }
+  .hero .hero-content {
+    padding: 0 0 0 3rem; }
+    @media (max-width: 770px) {
+      .hero .hero-content {
+        padding: 3rem 0 0 0; } }
+
+#works .single-work {
+  position: relative;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.17);
+  border-radius: 5px;
+  text-align: center;
+  height: 150px;
+  margin: 2rem 0;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  #works .single-work p {
+    display: none;
+    color: #fff; }
+  #works .single-work:hover {
+    transform: translateY(-2px); }
+    #works .single-work:hover p {
+      display: block; }
+
+.work-jetpack {
+  background-image: url("../image/work/jetpack.jpg"); }
+
+.work-accorp {
+  background-image: url("../image/work/accorp.jpg"); }
+
+.work-tsheurope {
+  background-image: url("../image/work/tsheurope.jpg"); }
+
+.work-ohana {
+  background-image: url("../image/work/ohana.jpg"); }
+
+.work-epalvalley {
+  background-image: url("../image/work/epalvalley.png"); }
+
+.work-archinext {
+  background-image: url("../image/work/archinext.png"); }
+
+.work-pizzaro {
+  background-image: url("../image/work/pizzaro.png"); }
+
+#testimonial .single-testimonial {
+  background: #CB6B93;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 25px 10px; }
+  #testimonial .single-testimonial .testimonial-user {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: #fff;
+    display: block;
+    margin: 0 0 0 auto; }
+    @media (max-width: 576px) {
+      #testimonial .single-testimonial .testimonial-user {
+        margin: 0 auto; } }
+  #testimonial .single-testimonial .testimonial-content {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1;
+    margin: 20px 0; }
+    @media (max-width: 576px) {
+      #testimonial .single-testimonial .testimonial-content {
+        text-align: center; } }
+    #testimonial .single-testimonial .testimonial-content p {
+      margin: 0 0 5px 0;
+      font-weight: 700; }
+    #testimonial .single-testimonial .testimonial-content span {
+      font-size: .9rem; }
+
+#brand img {
+  max-height: 50px;
+  width: auto;
+  background-size: cover; }
+
+#cta {
+  margin: 2rem 0; }
+  #cta .cta-content {
+    padding: 25px 30px;
+    background: #fff;
+    box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px; }
+    #cta .cta-content h3 {
+      font-size: 1rem;
+      /* Have a project in mi: */
+      font-family: "Quattrocento Sans", monospace;
+      font-weight: 700;
+      color: #424140; }
+    #cta .cta-content p {
+      /* Would love to discus: */
+      font-family: "Quattrocento Sans", monospace;
+      font-size: .8rem;
+      color: #424140; }
+
+#cta .cta-profile img {
+  max-width: 100px;
+  height: auto;
+  margin: 0 10px 0 auto;
+  display: block; }
+#cta .cta-detail svg {
+  margin-right: 10px; }
 
 .article {
   color: #2e3234;
