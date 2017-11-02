@@ -20,6 +20,7 @@ body {
   font-family: $primary-font;
   font-weight: 700;
   padding: .5rem 1.5rem;
+  border: 1px solid #5F80E1;
   &:hover{
     color: #5F80E1;
     background:$white;
@@ -42,7 +43,26 @@ section{
 
 .navbar {
   margin-bottom: 50px;
-border: 1px solid rgba(151,151,151,0.46);
+  border: 1px solid rgba(151,151,151,0.46);
+  .navbar-toggler{
+    i { color: #5F80E1; }
+  }
+  .nav-item{
+    padding: 20px;
+    letter-spacing: 1.2px;
+    color: #CB6B93;
+  }
+  .navbar-collapse{
+    .navbar-nav{
+    display: block;
+    margin: 0 0 0 auto;
+    font-size: .9rem;
+    opacity: .8;
+    &:hover{
+      opacity: 1;
+    }
+    }
+  }
 }
 
 .navbar-header{
@@ -133,8 +153,7 @@ justify-content: center;
     .testimonial-user{
       height: 100px;
       width: 100px;
-      border-radius: 50%;
-      background: $white;
+      border-radius: 60%;
       display: block;
       margin: 0 0 0 auto;
       @media(max-width: 576px){
@@ -162,7 +181,7 @@ justify-content: center;
 
 #brand{
   img{
-    max-height: 50px;
+    max-height: 100px;
     width: auto;
     background-size: cover;
   }
@@ -190,18 +209,24 @@ color: #424140;
   }
 }
 
+
 #cta{
-  .cta-profile{
-    img{
-      max-width: 100px;
-      height: auto;
-      margin: 0 10px 0 auto;
-      display: block;
+  .cta-content{
+    display: flex;
+    align-items: center;
+    @media(max-width: 450px){
+      flex-direction: column;
     }
-  }
-  .cta-detail{
-    svg{
-      margin-right: 10px;
+    .cta-profile{
+      flex: 1 1 30%;
+      img{ max-width: 100px; display: block; margin: 0 0 0 auto;}
+    }
+    .cta-detail{
+      padding: 20px 0 0 50px;
+      flex: 1 1 70%;
+      @media(max-width: 450px){
+        padding: 20px 0 0 10px;
+      }
     }
   }
 }
@@ -213,11 +238,11 @@ color: #424140;
     font-size: 2rem;
     color: $black;
     font-weight: 600;
-    border-bottom: 3px solid $purple;
+    border-bottom: 3px solid $blue;
   }
   a:hover{
     text-decoration: none;
-    background: $purple;
+    background: $blue;
     color: $white;
   }
   .article-date{
@@ -236,7 +261,7 @@ color: #424140;
 
 .single-blog-content{ margin: 50px 0 0;
 
-  h1,h2,h3,h4,h5,h6{ border-bottom: 5px solid rgba($purple,.8); padding: 5px 0;}
+  h1,h2,h3,h4,h5,h6{ border-bottom: 5px solid rgba($blue,.8); padding: 5px 0;}
   h1,h2,h3{ font-family: $secondary-font; margin: 3rem 0 1.5rem; font-weight: 600;}
   p{ margin: 1rem 0;}
   h1{ font-size: 2rem;}
@@ -249,9 +274,24 @@ color: #424140;
 
 // Footer
 
-footer{ background: $black-2; padding: 50px 0; margin-top: 100px;
+footer{ background: #3F4E66; padding: 50px 0; margin-top: 100px;
   .navbar-header{
     a { color: $white; display: block; text-align: center;}
+  }
+  .footer-social{
+    border-top: 1px solid rgba($white,.2);
+    border-bottom: 1px solid rgba($white,.2);
+    padding: 30px 20px 30px;
+    margin-bottom: 30px;
+    img{
+      max-width: 1.5rem;
+    }
+    i{
+      color: $white;
+      font-size: 1.5rem;
+      display: block;
+      text-align: center;
+    }
   }
   .footer-text{
     color: $white;

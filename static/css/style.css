@@ -169,7 +169,8 @@ body {
   font-size: .6rem;
   font-family: "Quattrocento Sans", monospace;
   font-weight: 700;
-  padding: .5rem 1.5rem; }
+  padding: .5rem 1.5rem;
+  border: 1px solid #5F80E1; }
   .btn:hover {
     color: #5F80E1;
     background: #fff; }
@@ -187,6 +188,19 @@ section {
 .navbar {
   margin-bottom: 50px;
   border: 1px solid rgba(151, 151, 151, 0.46); }
+  .navbar .navbar-toggler i {
+    color: #5F80E1; }
+  .navbar .nav-item {
+    padding: 20px;
+    letter-spacing: 1.2px;
+    color: #CB6B93; }
+  .navbar .navbar-collapse .navbar-nav {
+    display: block;
+    margin: 0 0 0 auto;
+    font-size: .9rem;
+    opacity: .8; }
+    .navbar .navbar-collapse .navbar-nav:hover {
+      opacity: 1; }
 
 .navbar-header {
   /* JAKZ AIZZAT: */ }
@@ -268,8 +282,7 @@ section {
   #testimonial .single-testimonial .testimonial-user {
     height: 100px;
     width: 100px;
-    border-radius: 50%;
-    background: #fff;
+    border-radius: 60%;
     display: block;
     margin: 0 0 0 auto; }
     @media (max-width: 576px) {
@@ -290,7 +303,7 @@ section {
       font-size: .9rem; }
 
 #brand img {
-  max-height: 50px;
+  max-height: 100px;
   width: auto;
   background-size: cover; }
 
@@ -313,13 +326,24 @@ section {
       font-size: .8rem;
       color: #424140; }
 
-#cta .cta-profile img {
-  max-width: 100px;
-  height: auto;
-  margin: 0 10px 0 auto;
-  display: block; }
-#cta .cta-detail svg {
-  margin-right: 10px; }
+#cta .cta-content {
+  display: flex;
+  align-items: center; }
+  @media (max-width: 450px) {
+    #cta .cta-content {
+      flex-direction: column; } }
+  #cta .cta-content .cta-profile {
+    flex: 1 1 30%; }
+    #cta .cta-content .cta-profile img {
+      max-width: 100px;
+      display: block;
+      margin: 0 0 0 auto; }
+  #cta .cta-content .cta-detail {
+    padding: 20px 0 0 50px;
+    flex: 1 1 70%; }
+    @media (max-width: 450px) {
+      #cta .cta-content .cta-detail {
+        padding: 20px 0 0 10px; } }
 
 .article {
   color: #2e3234;
@@ -328,10 +352,10 @@ section {
     font-size: 2rem;
     color: #2e3234;
     font-weight: 600;
-    border-bottom: 3px solid #533b9a; }
+    border-bottom: 3px solid #5F80E1; }
   .article a:hover {
     text-decoration: none;
-    background: #533b9a;
+    background: #5F80E1;
     color: #fff; }
   .article .article-date {
     display: block;
@@ -348,7 +372,7 @@ section {
 .single-blog-content {
   margin: 50px 0 0; }
   .single-blog-content h1, .single-blog-content h2, .single-blog-content h3, .single-blog-content h4, .single-blog-content h5, .single-blog-content h6 {
-    border-bottom: 5px solid rgba(83, 59, 154, 0.8);
+    border-bottom: 5px solid rgba(95, 128, 225, 0.8);
     padding: 5px 0; }
   .single-blog-content h1, .single-blog-content h2, .single-blog-content h3 {
     font-family: "Crimson Text", sans-serif;
@@ -370,13 +394,25 @@ section {
   margin: 50px 0; }
 
 footer {
-  background: #2b303e;
+  background: #3F4E66;
   padding: 50px 0;
   margin-top: 100px; }
   footer .navbar-header a {
     color: #fff;
     display: block;
     text-align: center; }
+  footer .footer-social {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px 20px 30px;
+    margin-bottom: 30px; }
+    footer .footer-social img {
+      max-width: 1.5rem; }
+    footer .footer-social i {
+      color: #fff;
+      font-size: 1.5rem;
+      display: block;
+      text-align: center; }
   footer .footer-text {
     color: #fff;
     text-align: center; }
