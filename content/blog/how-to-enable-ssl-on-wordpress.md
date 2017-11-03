@@ -1,5 +1,5 @@
 ---
-title: "How to Enable Ssl on Wordpress"
+title: "How to Enable SSl on WordPress"
 date: 2017-08-09T13:01:11+08:00
 draft: false
 ---

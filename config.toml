@@ -1,3 +1,4 @@
 baseURL = "https://jakzaizzat.com/"
 languageCode = "en-us"
 title = "Jakz Aizzat"
+enableRobotsTXT = "true"
