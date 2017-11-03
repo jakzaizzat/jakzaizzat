@@ -341,6 +341,18 @@ section {
         max-width: 100%;
         border: 1px solid rgba($black, .4);
     }
+    sub {
+        display: block;
+        margin: 0 auto;
+        bottom: 15px;
+        text-align: center;
+        font-style: italic;
+    }
+    blockquote {
+        font-size: 1.3rem;
+        border-left: 5px solid #CB6B93;
+        padding: 0 0 0 20px;
+    }
 }
 
 .single-blog-link {

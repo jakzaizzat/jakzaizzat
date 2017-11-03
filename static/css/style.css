@@ -412,6 +412,16 @@ section {
     margin: 30px auto;
     max-width: 100%;
     border: 1px solid rgba(46, 50, 52, 0.4); }
+  .single-blog-content sub {
+    display: block;
+    margin: 0 auto;
+    bottom: 15px;
+    text-align: center;
+    font-style: italic; }
+  .single-blog-content blockquote {
+    font-size: 1.3rem;
+    border-left: 5px solid #CB6B93;
+    padding: 0 0 0 20px; }
 
 .single-blog-link {
   margin: 50px 0; }
