@@ -1,33 +1,26 @@
-
-{{ partial "header.html" . }}
-
-
+ {{ partial "header.html" . }}
 <header class="single-blog-title">
-  <h1>
+    <h1>
     <span>{{ .Title }}</span>
   </h1>
-  <hr>
-  <span class="date">{{ .Date.Format "Mon Jan 2, 2006" }}</span>
+    <hr>
+    <span class="date">{{ .Date.Format "Mon Jan 2, 2006" }}</span>
 </header>
-
-
 <article class="single-blog-content">
-  {{ .Content }}
+    {{ .Content }}
 </article>
-
+{{ partial "addthis" . }}
 <div class="single-blog-link row">
-{{ if .NextInSection }}
-<div class="previous-link col-md-6">
-  <a href="{{.NextInSection.Permalink}}">👈 Next Post</a>
-  <p>{{.NextInSection.Title}}</p>
+    {{ if .NextInSection }}
+    <div class="previous-link col-md-6">
+        <a href="{{.NextInSection.Permalink}}">👈 Next Post</a>
+        <p>{{.NextInSection.Title}}</p>
+    </div>
+    {{ end }} {{ if .PrevInSection }}
+    <div class="next-link col-md-6">
+        <a href="{{.PrevInSection.Permalink}}">Previous Post 👉</a>
+        <p>{{.PrevInSection.Title}}</p>
+    </div>
+    {{ end }}
 </div>
-{{ end }}
-{{ if .PrevInSection }}
-<div class="next-link col-md-6">
-  <a href="{{.PrevInSection.Permalink}}">Previous Post 👉</a>
-  <p>{{.PrevInSection.Title}}</p>
-</div>
-{{ end }}
-</div>
-
 {{ partial "footer.html" . }}

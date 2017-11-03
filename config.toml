@@ -2,3 +2,7 @@ baseURL = "https://jakzaizzat.com/"
 languageCode = "en-us"
 title = "Jakz Aizzat"
 enableRobotsTXT = "true"
+
+
+[params]
+    addThis = "ra-531ee76d20003c91"
