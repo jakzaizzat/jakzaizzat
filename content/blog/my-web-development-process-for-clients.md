@@ -5,6 +5,8 @@ draft: false
 ---
 
 
+![My Web Development Process for Clients](/image/20171029/my-web-development-process-for-clients.png)
+<sub><sup>Icon from jngll and Eucalyp </sup></sub>
 
 ## Gathering Information
 
