@@ -1,7 +1,7 @@
 ---
 title: "My Web Development Process for Clients"
 date: 2017-10-29T12:34:02+08:00
-draft: false
+draft: true
 ---
 
 
