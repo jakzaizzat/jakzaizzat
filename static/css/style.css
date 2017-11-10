@@ -4,7 +4,7 @@
  * Loosely based on Monokai textmate theme by http://www.monokai.nl/
  * @author ocodia
  */
-@import url("https://fonts.googleapis.com/css?family=Crimson+Text:400,600|Quattrocento+Sans:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900");
 code[class*="language-"],
 pre[class*="language-"] {
   color: #f8f8f2;
@@ -156,34 +156,39 @@ pre.code-toolbar > .toolbar span:focus {
   text-decoration: none; }
 
 body {
-  font-family: "Quattrocento Sans", monospace !important; }
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Roboto !important; }
 
 @media (min-width: 992px) {
   .container {
     max-width: 900px !important; } }
 .btn {
   background: #5F80E1;
-  border-radius: 3px;
+  border-radius: 30px;
   color: #fff;
   text-transform: uppercase;
-  font-size: .6rem;
-  font-family: "Quattrocento Sans", monospace;
+  font-size: 1.2rem;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Roboto;
   font-weight: 700;
-  padding: .5rem 1.5rem;
-  border: 1px solid #5F80E1; }
+  padding: .8rem 1.8rem;
+  border: 1px solid #5F80E1;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(90deg, #4E6ABB 0%, #5F80E1 98%);
+  border-color: transparent; }
   .btn:hover {
-    color: #5F80E1;
-    background: #fff; }
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); }
 
 .subheading {
-  font-family: "Crimson Text", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Roboto;
   font-weight: 700;
-  font-size: 1rem;
-  color: #7B7A7A;
-  margin: 0 0 2rem 0; }
+  font-size: 2rem;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  color: #201E1C;
+  margin: 0 0 3rem 0; }
 
 section {
-  padding: 3rem 0; }
+  padding: 4rem 0; }
 
 .navbar {
   margin-bottom: 20px;
@@ -214,29 +219,33 @@ section {
   /* JAKZ AIZZAT: */ }
   .navbar-header a {
     color: #5F80E1;
-    font-family: "Quattrocento Sans", monospace;
-    font-weight: 900;
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica, Roboto;
+    font-weight: 600;
     font-size: 1.3rem;
     text-transform: uppercase;
     letter-spacing: 1.11px; }
 
 .hero {
-  font-family: "Crimson Text", sans-serif; }
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Roboto; }
   .hero img {
     background-repeat: no-repeat;
     display: block;
     margin: 0 auto; }
   .hero h1,
   .hero h2 {
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #201E1C;
-    line-height: 24px; }
+    line-height: 1.5; }
+  .hero h2 {
+    font-size: 1.5;
+    font-weight: 300;
+    margin-bottom: 20px; }
   .hero p {
     font-size: .7rem;
     color: #424140;
     margin: 1.4rem 0;
-    font-family: "Quattrocento Sans", monospace; }
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica, Roboto; }
   .hero .hero-content {
     padding: 0 0 0 3rem; }
     @media (max-width: 770px) {
@@ -253,14 +262,33 @@ section {
   background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  transition: 0.8s cubic-bezier(0.2, 1, 0.2, 1); }
+  #works .single-work h3 {
+    color: #fff;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    font-size: 1.3rem;
+    font-weight: 600;
+    position: absolute;
+    top: 20px;
+    left: 20px; }
   #works .single-work p {
-    display: none;
-    color: #fff; }
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    position: absolute;
+    bottom: 10px;
+    left: 20px; }
   #works .single-work:hover {
-    transform: translateY(-2px); }
+    transform: scale(1.048) translateY(-5px); }
     #works .single-work:hover p {
       display: block; }
+  #works .single-work:before {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    border-radius: 5px; }
 
 .work-jetpack {
   background-image: url("../image/work/jetpack.jpg"); }
@@ -331,16 +359,17 @@ section {
     box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 0.1);
     border-radius: 5px; }
     #cta .cta-content h3 {
-      font-size: 1rem;
+      font-size: 2rem;
       /* Have a project in mi: */
-      font-family: "Quattrocento Sans", monospace;
+      font-family: -apple-system, BlinkMacSystemFont, Helvetica, Roboto;
       font-weight: 700;
-      color: #424140; }
+      color: #424140;
+      letter-spacing: 1px; }
     #cta .cta-content p {
       /* Would love to discus: */
-      font-family: "Quattrocento Sans", monospace;
-      font-size: .8rem;
-      color: #424140; }
+      font-family: -apple-system, BlinkMacSystemFont, Helvetica, Roboto;
+      font-size: 1rem;
+      color: #888; }
 
 #cta .cta-content {
   display: flex;
@@ -351,7 +380,7 @@ section {
   #cta .cta-content .cta-profile {
     flex: 1 1 30%; }
     #cta .cta-content .cta-profile img {
-      max-width: 100px;
+      max-width: 150px;
       display: block;
       margin: 0 0 0 auto; }
   #cta .cta-content .cta-detail {
@@ -378,7 +407,7 @@ section {
     color: rgba(46, 50, 52, 0.8); }
 
 .single-blog-title h1 {
-  font-family: "Crimson Text", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Roboto;
   font-weight: 600; }
 .single-blog-title h5 {
   color: rgba(46, 50, 52, 0.8); }
@@ -398,11 +427,13 @@ section {
   .single-blog-content h1,
   .single-blog-content h2,
   .single-blog-content h3 {
-    font-family: "Crimson Text", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica, Roboto;
     margin: 3rem 0 1.5rem;
     font-weight: 600; }
   .single-blog-content p {
-    margin: 1rem 0; }
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin: 1.25rem 0; }
   .single-blog-content h1 {
     font-size: 2rem; }
   .single-blog-content h2 {
@@ -455,7 +486,8 @@ footer {
 /** Social Share Button**/
 #social-share {
   position: relative;
-  top: -0.5em; }
+  top: -0.5em;
+  margin-top: 3rem; }
 
 #social-share ul {
   margin: 0;

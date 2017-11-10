@@ -1,10 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600|Quattrocento+Sans:400,700,900');
+//@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600|Quattrocento+Sans:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+$default-font: -apple-system,
+BlinkMacSystemFont,
+Helvetica,
+Roboto;
 
-$primary-font: 'Quattrocento Sans', monospace;
-$secondary-font: 'Crimson Text', sans-serif;
+// $primary-font: 'Quattrocento Sans',
+// monospace;
+// $secondary-font: 'Crimson Text',
+// sans-serif;
+$primary-font: $default-font;
+$secondary-font: $default-font;
 
-$black: rgb(46,50,52);
+
+$black: rgb(46,
+50,
+52);
 $white: #fff;
 $purple: #533b9a;
 $black-2: #2b303e;
-$blue : #5F80E1;
+$blue: #5F80E1;
