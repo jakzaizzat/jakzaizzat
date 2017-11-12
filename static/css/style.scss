@@ -16,7 +16,7 @@ body {
     border-radius: 30px;
     color: $white;
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: $primary-font;
     font-weight: 700;
     padding: .8rem 1.8rem;
@@ -36,7 +36,7 @@ body {
     font-family: $secondary-font;
     font-weight: 700;
     font-size: 2rem;
-    text-shadow: 0 10px 20px rgba(0, 0, 0, .25);
+    text-shadow: 0 10px 20px rgba(0, 0, 0, .15);
     color: #201E1C;
     margin: 0 0 3rem 0;
 }
@@ -90,7 +90,10 @@ section {
         text-transform: uppercase;
         letter-spacing: 1.11px;
     }
-    /* JAKZ AIZZAT: */
+    img {
+        max-width: 150px;
+        height: auto;
+    }
 }
 
 // Homepage
@@ -158,6 +161,7 @@ section {
             position: absolute;
             bottom: 10px;
             left: 20px;
+            text-align: left;
         }
         &:hover {
             transform: scale(1.048) translateY(-5px);
@@ -333,6 +337,7 @@ section {
     h1 {
         font-family: $secondary-font;
         font-weight: 600;
+        margin: 3rem 0;
     }
     h5 {
         color: rgba($black, .8);
@@ -394,6 +399,12 @@ section {
 
 .single-blog-link {
     margin: 50px 0;
+    .previous-link {
+        text-align: left;
+    }
+    .next-link {
+        text-align: right;
+    }
 }
 
 
@@ -432,58 +443,6 @@ footer {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

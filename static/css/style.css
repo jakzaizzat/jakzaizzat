@@ -166,7 +166,7 @@ body {
   border-radius: 30px;
   color: #fff;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica, Roboto;
   font-weight: 700;
   padding: .8rem 1.8rem;
@@ -183,7 +183,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Helvetica, Roboto;
   font-weight: 700;
   font-size: 2rem;
-  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   color: #201E1C;
   margin: 0 0 3rem 0; }
 
@@ -215,15 +215,16 @@ section {
     .navbar .navbar-collapse .navbar-nav:hover {
       opacity: 1; }
 
-.navbar-header {
-  /* JAKZ AIZZAT: */ }
-  .navbar-header a {
-    color: #5F80E1;
-    font-family: -apple-system, BlinkMacSystemFont, Helvetica, Roboto;
-    font-weight: 600;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    letter-spacing: 1.11px; }
+.navbar-header a {
+  color: #5F80E1;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica, Roboto;
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1.11px; }
+.navbar-header img {
+  max-width: 150px;
+  height: auto; }
 
 .hero {
   font-family: -apple-system, BlinkMacSystemFont, Helvetica, Roboto; }
@@ -277,7 +278,8 @@ section {
     font-size: 1rem;
     position: absolute;
     bottom: 10px;
-    left: 20px; }
+    left: 20px;
+    text-align: left; }
   #works .single-work:hover {
     transform: scale(1.048) translateY(-5px); }
     #works .single-work:hover p {
@@ -408,7 +410,8 @@ section {
 
 .single-blog-title h1 {
   font-family: -apple-system, BlinkMacSystemFont, Helvetica, Roboto;
-  font-weight: 600; }
+  font-weight: 600;
+  margin: 3rem 0; }
 .single-blog-title h5 {
   color: rgba(46, 50, 52, 0.8); }
 .single-blog-title span.date {
@@ -456,6 +459,10 @@ section {
 
 .single-blog-link {
   margin: 50px 0; }
+  .single-blog-link .previous-link {
+    text-align: left; }
+  .single-blog-link .next-link {
+    text-align: right; }
 
 footer {
   background: #3F4E66;

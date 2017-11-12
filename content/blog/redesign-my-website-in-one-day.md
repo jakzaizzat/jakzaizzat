@@ -42,6 +42,7 @@ One another problem is where I need to host this website? I only have shared hos
 ![Netlify Interface](/image/20170813/Netlify.png)
 
 The reasons I choose Netlify are
+
 * It's fast
 * Automatic Deploy
 * Include CDN

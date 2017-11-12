@@ -11,16 +11,17 @@
 </article>
 {{ partial "social-share" . }}
 <div class="single-blog-link row">
-    {{ if .NextInSection }}
     <div class="previous-link col-md-6">
+        {{ if .NextInSection }}
         <a href="{{.NextInSection.Permalink}}">👈 Next Post</a>
         <p>{{.NextInSection.Title}}</p>
+        {{ end }}
     </div>
-    {{ end }} {{ if .PrevInSection }}
     <div class="next-link col-md-6">
+        {{ if .PrevInSection }}
         <a href="{{.PrevInSection.Permalink}}">Previous Post 👉</a>
         <p>{{.PrevInSection.Title}}</p>
+        {{ end }}
     </div>
-    {{ end }}
 </div>
 {{ partial "footer.html" . }}
