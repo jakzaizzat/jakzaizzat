@@ -104,6 +104,11 @@ section {
         display: block;
         margin: 0 auto;
     }
+    .illustration svg {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+    }
     h1,
     h2 {
         font-size: 2rem;
@@ -443,6 +448,10 @@ footer {
         }
     }
 }
+
+
+
+
 
 
 
