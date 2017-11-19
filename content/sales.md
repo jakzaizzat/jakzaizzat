@@ -11,7 +11,15 @@ weight = "1"
 <div id="chart"></div>
 
 <div class="goal">
-	<div class="circle"></div><p>Goals End of 2017 RM <span id="goal"></span></p>
+	<div class="circle"></div><p>Sales 2017 RM <span id="goal"></span></p>
+</div>
+
+
+<div id="lastYear"></div>
+
+
+<div class="goal">
+	<div class="circle"></div><p>Sales 2016 RM <span id="goal2"></span></p>
 </div>
 
 <style type="text/css">
@@ -58,7 +66,38 @@ const chart = new Chart({
 });
 
 var myelement = document.getElementById("goal");
-    myelement.innerHTML= goal;
+    myelement.innerHTML= 1150;
+
+const lastYearData = {
+    labels: ["January", "February","April", "May", "July", "October", "November"],
+    datasets: [
+        {
+            title: "Sales",
+            values: [300,380,450,450, 200, 200, 400]
+        }
+    ],
+	"specific_values": [
+		{
+			title: "GOALS",
+			line_type: "dashed",
+			value: goal
+		},
+	]
+}
+
+const chart2 = new Chart({
+    parent: '#lastYear', // or a DOM element
+    title: "Last Year Income Accountability",
+    data: lastYearData,
+    type: 'line', // or 'line', 'scatter', 'pie', 'percentage'
+    height: 250,
+    colors: ['#28a745']
+});
+
+
+
+var myelement2 = document.getElementById("goal2");
+    myelement2.innerHTML= 2380;
 
 
 </script>
