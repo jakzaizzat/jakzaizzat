@@ -32,11 +32,11 @@ weight = "1"
 var goal = 1600;
 
 	const data = {
-    labels: ["August", "September", "October", "November"],
+    labels: ["February", "March","August", "September", "October", "November"],
     datasets: [
         {
             title: "Sales",
-            values: [300, 0, 0,300]
+            values: [250,300,300, 0, 0,300]
         }
     ],
 	"specific_values": [
